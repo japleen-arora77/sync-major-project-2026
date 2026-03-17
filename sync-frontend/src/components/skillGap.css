@@ -1,0 +1,158 @@
+/* css loader */
+.ai-loader-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.dot-loader {
+  display: flex;
+  gap: 14px;
+}
+
+.dot-loader span {
+  width: 18px;
+  height: 18px;
+  background: var(--green); /* your theme color */
+  border-radius: 50%;
+  animation: dotBounce 1.4s infinite ease-in-out both;
+}
+
+.dot-loader span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+.dot-loader span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes dotBounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+    opacity: 0.3;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.loader-text {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #666;
+}
+
+
+
+
+
+
+ /* skill gap section css  */
+.skill-head{
+    color: var(--green);
+}
+/* Cards */
+.skill-card {
+    background: var(--min-green);
+    border: none;
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 220px;
+    transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border 0.25s ease,
+  }
+  .skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    border: 1.5px solid var(--green) !important;
+  }
+  
+  .skill-card h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .skill-card ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .skill-card li {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .skill-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: var(--dark-grey);
+  }
+  
+  /* Priority titles */
+  .priority-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Progress bars */
+  .progress {
+    height: 20px;
+    border-radius: 999px;
+    background-color: #ddd;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    transition: width 1.2s ease-in-out;
+  }
+  
+.progress-text {
+    white-space: nowrap;
+  }
+
+  /* Priority colors */
+  .progress-bar.high {
+    background-color: var(--pastel-green); /* green */
+  }
+  
+  .progress-bar.medium {
+    background-color: var(--yellow) /* yellow */
+  }
+  
+  .progress-bar.low {
+    background-color: var(--red); /* red */
+  }
+  
+  .reason-toggle {
+    font-size: 13px;
+    color: var(--green);
+    cursor: pointer;
+  }
+  .skill-reason {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-size: 13px;
+    color: #555;
+    transition: all 0.4s ease;
+    margin-top: 6px;
+  }
+  
+  .skill-reason.open {
+    max-height: 80px;
+    opacity: 1;
+  }
+  
+  

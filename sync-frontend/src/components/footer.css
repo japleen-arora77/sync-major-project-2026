@@ -1,0 +1,36 @@
+.footer {
+    background-color: var(--green); 
+    color:var(--white);
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .footer-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .email-link {
+    color: var(--white);
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .icon-link {
+    color: var(--white);
+    font-size: 1.6rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .icon-link:hover {
+    color: var(--min-green);
+    transform: scale(1.1);
+  }
+  
