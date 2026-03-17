@@ -135,7 +135,7 @@ const ResumeAudit = () => {
     formData.append("resume", file);
     try {
       const response = await fetch(
-        "https://sync-backend-deploy.onrender.com/api/accounts/resume-analysis/",
+        "http://127.0.0.1:8000/api/accounts/resume-analysis/",
         {
           method: "POST",
           headers: {

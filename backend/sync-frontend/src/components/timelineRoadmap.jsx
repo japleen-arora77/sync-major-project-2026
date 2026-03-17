@@ -28,7 +28,7 @@ const TimelineRoadmap = () => {
       setLoading(true);
       setRoadmapData(null);
       const response = await axios.post(
-        "/accounts/timeline-roadmap/", 
+        "/accounts/timeline-roadmap/",
         {
           duration: Number(duration),
           unit: unit,

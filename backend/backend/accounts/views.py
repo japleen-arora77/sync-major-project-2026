@@ -133,7 +133,7 @@ class RegisterView(APIView):
     def post(self,request):
         serializer = RegisteredSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save() 
+            serializer.save()
             return Response(
                 {
                     "msg: user registered successfully"
@@ -406,37 +406,3 @@ class TimelineRoadmapView(APIView):
                 {"error": "Roadmap generation failed", "details": str(e)},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
-        
-
-
-
-
-
-
-
-        #temporary added 
-class CreateAdminView(APIView):
-    def get(self, request):
-        User = get_user_model()
-
-        # check if admin already exists
-        if User.objects.filter(email="jap.arora.2026@gmail.com").exists():
-            return Response(
-                {"msg": "Admin already exists"},
-                status=status.HTTP_200_OK
-            )
-
-        # create superuser using your model fields
-        user = User(
-            email="jap.arora.2026@gmail.com",
-            full_name="Japleen Arora"
-        )
-        user.set_password("imnotfine1234")
-        user.is_staff = True
-        user.is_superuser = True
-        user.save()
-
-        return Response(
-            {"msg": "Admin created successfully"},
-            status=status.HTTP_201_CREATED
-        )

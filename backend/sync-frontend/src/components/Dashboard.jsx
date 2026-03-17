@@ -1,6 +1,6 @@
 import React, { useEffect,useState } from "react";
 import "./dashboard.css";
-import api from "../api/axios.js";
+import api from "../api/axios";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
@@ -26,11 +26,11 @@ const Dashboard = () => {
   },[]);
 
   const fetchJobSuggestions  = async () => {
-    setShowJobs(true); 
+    setShowJobs(true);
     setLoading(true); 
 
     try {
-      const response = await api.get("/accounts/suggest-jobs/");
+      const response = await api.get("http://127.0.0.1:8000/api/accounts/suggest-jobs/");
       setJobRoles(response.data.job_roles);
     } catch (error) {
       console.error("Failed to fetch job roles", error);

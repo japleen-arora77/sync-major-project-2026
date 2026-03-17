@@ -1,6 +1,6 @@
 from django.urls import path
 from accounts.views import RegisterView, LoginView, ProfileView, ProfileCompletionView, JobRoleSuggestionView, CareerAnalysisView, ResumeAnalysisView, TimelineRoadmapView
-from accounts.views import AdminLoginView, AdminUserListView, AdminUserDetailView, AdminUpdateUserView, AdminDeleteUserView, CreateAdminView
+from accounts.views import AdminLoginView, AdminUserListView, AdminUserDetailView, AdminUpdateUserView, AdminDeleteUserView
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
     path('login/', LoginView.as_view(), name='login'),
@@ -16,6 +16,4 @@ urlpatterns = [
     path("admin/users/<int:pk>/", AdminUserDetailView.as_view(), name="admin-user-detail"),
     path("admin/users/<int:pk>/update/", AdminUpdateUserView.as_view()),
     path("admin/users/<int:pk>/delete/", AdminDeleteUserView.as_view()),
-
-    path('create-admin/', CreateAdminView.as_view()),
 ]

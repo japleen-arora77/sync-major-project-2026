@@ -1,0 +1,257 @@
+.resume-card {
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    max-width: 650px;
+    margin: auto;
+  }
+  .resume-card h1{
+    color: var(--green);
+  }
+  
+  .upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 12px;
+    padding: 50px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background: var(--white);
+  }
+  
+  .upload-area:hover {
+    border-color: var(--dark-green);
+    background: var(--min-green);
+  }
+  
+  .upload-icon i {
+    font-size: 40px;
+    color: var(--pastel-green);
+  }
+  
+  .file-preview {
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--grey);
+    transition: all 0.3s ease;
+  }
+  
+  .custom-progress {
+    height: 8px;
+    border-radius: 999px;
+    background: var(--grey);
+  }
+  
+  .custom-progress .progress-bar {
+    background-color: var(--pastel-green);
+    border-radius: 999px;
+    transition: width 0.3s ease;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .btn.analyze-btn{
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 999px;   
+    margin:5px 5px;  
+    padding: 5px 15px;         
+    font-weight: 600;
+    width: auto;
+    align-self: center;
+  }
+  .btn.remove-btn{
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 999px;   
+    margin:5px 5px;  
+    padding: 5px 15px;         
+    font-weight: 600;
+    width: auto;
+    align-self: center;
+  }
+  
+  .uploaded-file {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  .file-icon {
+    font-size: 42px;
+    color: var(--green);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+
+ 
+  
+ 
+  
+
+
+
+
+
+
+
+
+
+  .analysis-wrapper {
+    max-width: 900px;
+    margin: auto;
+  }
+  .analysis-card {
+    background: var(--white);
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    /* min-height: 220px; */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border 0.25s ease,
+  }
+  
+  .analysis-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    /* border: 1.5px solid var(--green) !important; */
+  }
+  
+  /* Headings */
+  .analysis-heading {
+    font-weight: 600;
+    color: var(--green);
+  }
+  
+  .analysis-desc {
+    color: var(--dark-grey);
+    font-size: 15px;
+  }
+  
+  /* Score */
+  .score-box h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0;
+  }
+  
+  .score-box span {
+    font-size: 18px;
+    color: var(--dark-green);
+  }
+  
+  .score-bar {
+    height: 6px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .score-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green), var(--dark-green));
+    transition: width 0.5s ease;
+  }
+  
+  /* Badges */
+  .modern-badge {
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: var(--min-green);
+    color: var(--dark-green);
+    /* font-weight: 500; */
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+  
+  .modern-badge:hover {
+    background: var(--green);
+    color:var(--white);
+  }
+  
+  /* Lists */
+  .modern-list {
+    padding-left: 18px;
+    color: #444;
+  }
+  
+  .modern-list li {
+    margin-bottom: 6px;
+  }
+  
+  /* Sub headings */
+  .sub-heading {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .active-badge {
+    background: var(--dark-green);
+    color: white;
+  }
+  
+  .skill-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .skill-reason1 {
+    margin-top: 10px;
+    /* background: var(--white); */
+    padding: 15px;
+    /* border-radius: 60px; */
+    font-size: 15px;
+    color: var(--dark-grey);
+    width: 100%;
+    max-width: 100%;
+    animation: fadeInReason 0.25s ease;
+  }
+  
+  
+  .cert-item {
+    border-left: 4px solid var(--dark-green);
+    padding-left: 10px;
+  }
+  .cert-desc{
+    font-size:15px;
+  }
+  
+  .project-card {
+    background: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .project-card:hover {
+    background:var(--min-green);
+    border:1px dashed var(--dark-green);
+  }
+  
+  .tech-badge {
+    background:var(--min-green);
+    color: var(--dark-green);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  
