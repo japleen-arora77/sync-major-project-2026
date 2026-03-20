@@ -169,18 +169,22 @@ useEffect(() => {
             <label>Stream *</label>
             <input type="text"  value={stream} onChange={(e) => setStream(e.target.value)} placeholder="e.g. Computer Science" required />
           </div>
-
+ 
           {/* Skills */}
           <div className="form-group">
             <label>Skills (max 5) *</label>
             <TagInput tags={skills} setTags={setSkills} limit={5} />
           </div>
 
+          
+
           {/* Interests */}
           <div className="form-group">
             <label>Interests (max 5) *</label>
             <TagInput tags={interests} setTags={setInterests} limit={5} />
           </div>
+
+
 
           {/* Target Job */}
           <div className="form-group">
