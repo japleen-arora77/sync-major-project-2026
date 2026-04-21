@@ -90,11 +90,11 @@ const SkillGap = () => {
   
 
   return (
-        <div>  
+        <div className='skill-container'>  
           {/*Navbar*/}
           <Navbar />
 
-            <div className="container my-5">
+            <div className="container  my-5" >
               <h1 className="text-center mb-3 skill-head">Skill Gap Analysis</h1>
                 {/* Top cards */}
                 <div className="row mb-5">
@@ -133,7 +133,6 @@ const SkillGap = () => {
                               <div className="skill-label d-flex justify-content-between">
                                 <span>{skill.name}</span>
                                     <span className="reason-toggle"
-                                    
                                     // onClick={() => setOpenReason(openReason === skill.name ? null : skill.name)}  
                                     onClick={() => {
                                       if (openReason.includes(skill.name)) {
@@ -144,7 +143,9 @@ const SkillGap = () => {
                                     }}
                                     
                                     >
-                                        {openReason.includes(skill.name) ? "Hide reason" : "Read reason"}
+                                      
+                                      {openReason.includes(skill.name) ? "Hide reason" : "Read reason"}
+                                      
                                     </span>
                               </div>
                             <div className="progress">

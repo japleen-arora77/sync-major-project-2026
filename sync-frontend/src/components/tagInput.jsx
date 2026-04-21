@@ -3,14 +3,14 @@ import React, { useState } from "react";
 const TagInput = ({ tags, setTags, limit }) => {
   const [input, setInput] = useState("");
 
-   // ✅ Ensure tags is always an array (safe handling)
+   // Ensure tags is always an array (safe handling)
    const safeTags = Array.isArray(tags)
    ? tags
    : typeof tags === "string"
    ? tags.split(",").map((t) => t.trim()).filter(Boolean)
    : [];
 
-    // ✅ NEW: Common function to add tag (used by Enter + Button)
+    // new Common function to add tag (used by Enter + Button)
   const handleAddTag = () => {
     if (!input.trim()) return; // prevent empty
     if (safeTags.length >= limit) return; // max limit
@@ -21,7 +21,7 @@ const TagInput = ({ tags, setTags, limit }) => {
   };
 
 
-  // ✅ Existing Enter key support (Desktop)
+  // Existing Enter key support (Desktop)
   const addTag = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -45,17 +45,17 @@ const TagInput = ({ tags, setTags, limit }) => {
         </span>
       ))}
 
-       {/* ✅ Input field */}
+       {/*  Input field */}
        <input
         type="text"
         value={input}
         placeholder="Type and press enter"
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={addTag} // Enter support
-        enterKeyHint="done" // ✅ Improves mobile keyboard button
+        enterKeyHint="done" 
       />
 
-       {/* ✅ NEW: + Button for mobile users */}
+       {/* new Button for mobile users */}
        <button
         type="button"
         className="add-btn"

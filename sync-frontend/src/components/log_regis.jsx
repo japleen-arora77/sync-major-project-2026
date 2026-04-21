@@ -148,10 +148,9 @@ const LogRegis = () => {
   </div>
 )}
 
-{/*  Always visible admin option */}
+{/*  Always visible admin option */} 
 <div className="admin-login-link">
-  <p>
-    Are you an admin?{" "}
+  <p  style={{}}>
     <span onClick={() => navigate("/admin-login")}>
       Admin Login
     </span>

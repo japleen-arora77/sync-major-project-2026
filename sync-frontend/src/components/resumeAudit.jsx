@@ -125,7 +125,7 @@ const ResumeAudit = () => {
     setScore(0);
     setHasAnimated(false);
   };
-
+ 
   // Handle Analyze Click
   const handleAnalyze = async () => {
     if (!file) return;
@@ -239,7 +239,7 @@ const ResumeAudit = () => {
 
 
   return (
-    <div>
+    <div className='skill-container'>
       <Navbar />
       <div className="resume-card mt-5 p-3">
         <h1 className="mb-4">Upload Resume</h1>
@@ -254,7 +254,7 @@ const ResumeAudit = () => {
           {file && progress === 100 ? (
             <div className="uploaded-file text-center">
               <i className="bi bi-file-earmark-text-fill file-icon mb-2" ></i>
-              <h6 className="mb-1">{file.name}</h6>
+              <h6 className="mb-1" style={{color:'var(--dark-grey)'}}>{file.name}</h6>
               <small className="text-success">
                 Uploaded Successfully
               </small>
@@ -404,8 +404,8 @@ const ResumeAudit = () => {
 
   {analysisData?.recommended_certifications?.map((cert, index) => (
     <div key={index} className="cert-item mb-3">
-      <h6 className="fw-semibold mb-1">{cert.title}</h6>
-      <p className="text-muted small mb-0 cert-desc">
+      <h6 className="fw-semibold mb-1" style={{color:'var(--black)'}}>{cert.title}</h6>
+      <p className=" small mb-0 cert-desc" style={{color:'var(--dark-grey)'}}>
         {cert.description}
       </p>
     </div>
@@ -427,8 +427,8 @@ const ResumeAudit = () => {
       {analysisData?.recommended_projects?.major.map(
         (proj, index) => (
           <div key={index} className="project-card mb-3">
-            <h6 className="fw-semibold">{proj.name}</h6>
-            <p className="small text-muted">
+            <h6 className="fw-semibold" style={{color:'var(--black)'}}>{proj.name}</h6>
+            <p className="small " style={{color:'var(--dark-grey)'}}>
               {proj.description}
             </p>
 
@@ -451,8 +451,8 @@ const ResumeAudit = () => {
       {analysisData?.recommended_projects?.minor.map(
         (proj, index) => (
           <div key={index} className="project-card mb-3">
-            <h6 className="fw-semibold">{proj.name}</h6>
-            <p className="small text-muted">
+            <h6 className="fw-semibold" style={{color:'var(--black)'}}>{proj.name}</h6>
+            <p className="small " style={{color:'var(--dark-grey)'}}>
               {proj.description}
             </p>
 

@@ -52,11 +52,9 @@ const OverallReadiness = () => {
             },
             { threshold: 0.1 }
         );
-
         if (sectionRef.current) {
             observer.observe(sectionRef.current);
         }
-
         return () => {
             if (sectionRef.current) {
                 observer.unobserve(sectionRef.current);
@@ -72,7 +70,6 @@ const OverallReadiness = () => {
         const duration = 2000;
         const stepTime = 20;
         const increment = end / (duration / stepTime);
-      
         const counter = setInterval(() => {
           start += increment;
           if (start >= end) {
@@ -160,7 +157,6 @@ const OverallReadiness = () => {
     },
   };
 
-  /* ---------------- UI ---------------- */
 
   return (
     <div className="container my-5" ref={sectionRef}>

@@ -114,6 +114,7 @@
   }
   .analysis-card {
     background: var(--white);
+    background-color:var(--light-grey);
     border: none;
     padding: 30px;
     border-radius: 10px;
@@ -198,6 +199,7 @@
   .sub-heading {
     font-weight: 600;
     margin-bottom: 10px;
+    color:var(--black);
   }
   
 
@@ -243,7 +245,7 @@
   }
   
   .project-card:hover {
-    background:var(--min-green);
+    /* background:var(--min-green); / */
     border:1px dashed var(--dark-green);
   }
   

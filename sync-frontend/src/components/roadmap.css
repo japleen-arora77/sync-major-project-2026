@@ -44,7 +44,8 @@
   
   /* Right */
   .roadmap-right {
-    background: #f7f7f7;
+    background:var(--light-grey);
+
     padding: 20px;
     border-radius: 10px;
     flex: 1;
@@ -56,6 +57,7 @@
   .roadmap-right:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    /* background-color:var(--white); */
     
   }
   

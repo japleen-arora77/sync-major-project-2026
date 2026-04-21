@@ -109,7 +109,7 @@ useEffect(() => {
       />
     </svg>
 
-    <span>{completion}%</span>
+    <span>{completion}%</span> 
   </div>
 </div>
 
@@ -118,13 +118,13 @@ useEffect(() => {
             <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="form-group">
-                        <label>Full Name *</label>
+                        <label style={{color:'var(--dark-grey)'}}>Full Name *</label>
                         <input type="text" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="form-group">
-                        <label>Email *</label>
+                        <label style={{color:'var(--dark-grey)'}}>Email *</label>
                         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                     </div>
                 </div>
@@ -136,10 +136,10 @@ useEffect(() => {
 
           {/* Education */}
           <div className="form-group">
-  <label>Education Level *</label>
+  <label style={{color:'var(--dark-grey)'}}>Education Level *</label>
 
   <div className="radio-group-inline">
-    <label className="radio-inline">
+    <label className="radio-inline" style={{color:'var(--dark-grey)'}}>
     <input
   type="radio"
   name="education"
@@ -150,7 +150,7 @@ useEffect(() => {
       <span>UG</span>
     </label>
 
-    <label className="radio-inline">
+    <label className="radio-inline" style={{color:'var(--dark-grey)'}}>
       <input
         type="radio"
         name="education"
@@ -166,13 +166,13 @@ useEffect(() => {
 
           {/* Stream */}
           <div className="form-group">
-            <label>Stream *</label>
+            <label style={{color:'var(--dark-grey)'}}>Stream *</label>
             <input type="text"  value={stream} onChange={(e) => setStream(e.target.value)} placeholder="e.g. Computer Science" required />
           </div>
  
           {/* Skills */}
           <div className="form-group">
-            <label>Skills (max 5) *</label>
+            <label style={{color:'var(--dark-grey)'}}>Skills (max 5) *</label>
             <TagInput tags={skills} setTags={setSkills} limit={5} />
           </div>
 
@@ -180,7 +180,7 @@ useEffect(() => {
 
           {/* Interests */}
           <div className="form-group">
-            <label>Interests (max 5) *</label>
+            <label style={{color:'var(--dark-grey)'}}>Interests (max 5) *</label>
             <TagInput tags={interests} setTags={setInterests} limit={5} />
           </div>
 
@@ -188,7 +188,7 @@ useEffect(() => {
 
           {/* Target Job */}
           <div className="form-group">
-            <label>Target Job Role (optional)</label>
+            <label style={{color:'var(--dark-grey)'}}>Target Job Role (optional)</label>
             <input type="text"  value={targetJob} onChange={(e) => setTargetJob(e.target.value)} placeholder="e.g. Frontend Developer" />
           </div>
 

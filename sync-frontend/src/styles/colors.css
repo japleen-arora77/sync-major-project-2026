@@ -1,13 +1,44 @@
+* {
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
 :root {
     --green: #3bb19b;
     --dark-green:#2d9481;
     --opac-green:#b6f9ee;
     --min-green:#eafaf3;
     --white:#fff;
+    --light-grey: #f7f7f7;
     --grey:#f2f2f2;
     --dark-grey:#777; 
     --yellow:#fad669;
     --red:#eb6663;
     --pastel-green:#6ded7e;
-
+    --black:#555;
+    
 } 
+
+.dark-mode {
+  /* ===== BACKGROUNDS ===== */
+  --white: #0f172a;        /* main background (deep blue-grey) */
+  --light-grey:#566076;   
+  --grey: #1e293b;         /* cards / inputs */
+    /* subtle sections */
+  /* --min-green:#91c3b9; */
+  --min-green:#b6f2e6; 
+
+  /* ===== TEXT ===== */
+  --dark-grey: #cbd5f5;    /* primary text */
+  
+  /* ===== PRIMARY BRAND (Green tuned for dark) ===== */
+
+  --green: #2ec4a6;   
+  --dark-green:#1f8f7b;
+  --opac-green: #064e3b;   /* subtle bg accents */
+
+  /* ===== ACCENTS ===== */
+  --yellow: #facc15;
+  --red: #f87171;
+  --pastel-green: #22c55e;
+  --black:#e6e7e9;  
+}

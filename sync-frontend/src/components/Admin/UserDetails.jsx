@@ -124,7 +124,7 @@ const UserDetails = ({ userId, onBack }) => {
         <div className="user-icon large">👤</div>
         <div>
           <h4 style={{color: "var(--green)"}}>{user.full_name}</h4>
-          <small style={{color: "var(--dark-grey)"}}>{user.email}</small>
+          <small style={{color: "var(--black)"}}>{user.email}</small>
         </div>
       </div>
       

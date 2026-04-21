@@ -9,9 +9,12 @@ import ResumeAudit from "./components/resumeAudit.jsx";
 import TimelineRoadmap from "./components/timelineRoadmap.jsx";
 import ProtectedRoute from "./utils/protectedRoute.js";
 import AdminProtectedRoute from "./utils/AdminProtectedRoute.js";
+import ThemeToggle from "./components/ThemeToggle.jsx";
 
 function App() {
   return (
+    <>
+    <ThemeToggle />
     <Routes>
       {/*public route anyone can access*/}
       <Route path="/" element={<LogRegis />} />
@@ -54,6 +57,8 @@ function App() {
               } />
 
     </Routes>
+    </>
+    
   );
 }
 

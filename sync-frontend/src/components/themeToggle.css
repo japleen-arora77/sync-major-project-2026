@@ -1,0 +1,35 @@
+/* ===== Floating Toggle Button ===== */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 30px;
+    background: var(--grey);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 2000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+  }
+  
+  /* ===== Moving Circle ===== */
+  .toggle-circle {
+    width: 24px;
+    height: 24px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    font-size: 14px;
+  }
+  
+  /* Move to right when dark */
+  .toggle-circle.dark {
+    transform: translateX(30px);
+  }

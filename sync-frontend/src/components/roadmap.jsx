@@ -46,10 +46,10 @@ const Roadmap = () => {
                 <div className="roadmap-line"></div>
               )}
             </div>
-
+ 
             {/* Right: Content */}
             <div className="roadmap-right"> 
-              <h4>{item.title}</h4>
+              <h4 style={{color:'var(--black)'}}>{item.title}</h4>
 
               <div className="skills">
                 {item.skills.map((skill, i) => (
@@ -59,7 +59,7 @@ const Roadmap = () => {
                 ))}
               </div>
 
-              <p>{item.description}</p>
+              <p style={{color:'var(--black)'}}>{item.description}</p>
             </div>
 
           </div>

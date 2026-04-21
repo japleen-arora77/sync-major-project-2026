@@ -4,7 +4,7 @@ import "./timelineRoadmap.css";
 import Navbar from "./navbar.jsx";
 import Footer from "./footer.jsx";
 import axios from "../api/axios.js"
-
+ 
 const TimelineRoadmap = () => {
   const [duration, setDuration] = useState("");
   const [unit, setUnit] = useState("months");
@@ -77,7 +77,7 @@ const TimelineRoadmap = () => {
   }, []);
 
   return (
-    <div>
+    <div className='skill-container'>
       <Navbar />
 
       <div className="timeline-page">
@@ -151,7 +151,7 @@ const TimelineRoadmap = () => {
               <h2 className="text-center mb-5 skill-head">
                 Timeline based customized roadmap:
               </h2>
-              <h2>
+              <h2 style={{color:'var(--black)'}}>
   {roadmapData.roadmap_data.timeline_type === "weeks"
     ? "Weekly Roadmap"
     : "Monthly Roadmap"}
@@ -172,10 +172,10 @@ const TimelineRoadmap = () => {
                     <div className="timeline-dot"></div>
 
                     <div
-                      className="timeline-card"
+                      className="timeline-card "
                       onClick={() => toggleExpand(key)}
                     >
-                      <h5>{key}</h5>
+                      <h5 style={{color:'var(--black)'}}>{key}</h5>
                       <h6 className="focus">{value.focus}</h6>
 
                       <p className="small goal mb-2">

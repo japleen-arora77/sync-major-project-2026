@@ -68,7 +68,8 @@
   }
   
   .timeline-card {
-    background: #f7f7f7;
+    background: var(--light-grey);
+    /* background:var(--light-grey); */
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -91,9 +92,10 @@
   .details {
     margin-top: 10px;
     animation: expand 0.3s ease;
+    color:var(--black)
   }
   .focus{
-    color:var(--green);
+    color:var(--green); 
   }
   .goal{
     color:var(--dark-grey);

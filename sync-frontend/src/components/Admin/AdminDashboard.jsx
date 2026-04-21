@@ -41,13 +41,8 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div>
-      {/* <Navbar /> */}
-
+    <div className="admin-container">
       <div className="container my-5">
-
-
-
     <div className="admin-header">
       <h2 className="admin-title" style={{color: "var(--dark-green)"}}>
         Admin Panel
@@ -79,14 +74,11 @@ const AdminDashboard = () => {
                   <small style={{color: "var(--dark-grey)"}}>{user.email}</small>
                 </div>
               </div>
-
-              <p><strong style={{color: "var(--dark-green)"}}>User ID:</strong> {user.id}</p>
-              <p><strong style={{color: "var(--dark-green)"}}>Target Job:</strong> {user.target_job}</p>
-              <p><strong style={{color: "var(--dark-green)"}}>Date Joined:</strong> {user.date_joined}</p>
-              <p>
-                <strong style={{color: "var(--dark-green)"}}>Admin:</strong>{" "}
-                {user.is_staff ? "Yes" : "No"}
-              </p>
+ 
+              <p className='detail-user'><strong className='detail-user-head' >User ID:</strong> {user.id}</p>
+              <p className='detail-user'><strong className='detail-user-head' >Target Job:</strong> {user.target_job}</p>
+              <p className='detail-user'><strong className='detail-user-head' >Date Joined:</strong> {user.date_joined}</p>
+              <p className='detail-user'><strong className='detail-user-head' >Admin:</strong>{" "} {user.is_staff ? "Yes" : "No"}</p>
             </div>
           ))}
 
@@ -99,7 +91,7 @@ const AdminDashboard = () => {
         )}
       </div>
 
-      {/* <Footer /> */}
+
     </div>
   );
 };

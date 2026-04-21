@@ -1,10 +1,12 @@
-
+.admin-container{
+  background:var(--white)
+}
 .admin-header{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-}
+} 
 .admin-title{
   color:var(--dark-green);
   text-align: left;
@@ -25,7 +27,7 @@
   transform: translateY(-2px);
 }
 .admin-user-card {
-    /* background: var(--grey); */
+    background: var(--light-grey);
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -62,6 +64,12 @@
     background: var(--min-green);
     padding: 40px;
     border-radius: 15px;
+  }
+  .detail-user{
+    color:var(--dark-grey);
+  }
+  .detail-user-head{
+    color:var(--green);
   }
   
   .admin-actions {
