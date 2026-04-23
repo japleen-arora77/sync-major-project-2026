@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import AdminLogin from "./components/Admin/AdminLogin.jsx";
 import AdminDashboard from "./components/Admin/AdminDashboard.jsx";
 import LogRegis from "./components/log_regis.jsx";
@@ -10,8 +11,26 @@ import TimelineRoadmap from "./components/timelineRoadmap.jsx";
 import ProtectedRoute from "./utils/protectedRoute.js";
 import AdminProtectedRoute from "./utils/AdminProtectedRoute.js";
 import ThemeToggle from "./components/ThemeToggle.jsx";
+import SplashScreen from "./components/SplashScreen.jsx";
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  //  Show splash for 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  //  Show splash first
+  if (loading) {
+    return <SplashScreen />;
+  }
+
   return (
     <>
     <ThemeToggle />
