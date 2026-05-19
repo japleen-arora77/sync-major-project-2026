@@ -10,7 +10,6 @@ urlpatterns = [
     path('career-analysis/',CareerAnalysisView.as_view(), name='career-analysis'), #AI api
     path("resume-analysis/", ResumeAnalysisView.as_view(), name="resume-analysis"), #AI api
     path("timeline-roadmap/", TimelineRoadmapView.as_view(), name="timeline-roadmap"), #AI api
-
     path("admin/login/", AdminLoginView.as_view(), name="admin-login"),
     path("admin/users/", AdminUserListView.as_view(), name="admin-users"),
     path("admin/users/<int:pk>/", AdminUserDetailView.as_view(), name="admin-user-detail"),

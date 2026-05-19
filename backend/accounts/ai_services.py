@@ -5,7 +5,7 @@ from django.conf import settings
 import json
 import ast
 from openai import OpenAI
-import os
+import os 
  
 from sync_backend.settings import OPENROUTER_API_KEY
 
